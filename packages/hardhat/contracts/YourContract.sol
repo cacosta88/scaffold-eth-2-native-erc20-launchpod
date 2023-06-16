@@ -475,6 +475,7 @@ contract YourContract is AccessControl, ReentrancyGuard {
 
         delete erc20FlowingCreators[_creator];
         delete erc20CreatorIndex[_creator];
+        delete creatorTokens[_creator];
 
         isCreatorAdded[_creator] = false;
 
